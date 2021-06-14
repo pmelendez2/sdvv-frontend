@@ -7,9 +7,11 @@ name: deploy_to_dev_hosting
 
 on:
   workflow_dispatch: 
+    tags:
+      description: 'Manual workflow run.'
   push:
-  tags:
-    - deploy-to-dev-hosting*
+    tags:
+      - deploy-to-dev-hosting*
 #    branches:
 #     - master
 jobs:
