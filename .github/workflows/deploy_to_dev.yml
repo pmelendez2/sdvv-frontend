@@ -4,10 +4,12 @@ name: deploy_to_dev_hosting
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
+
 on:
+  workflow_dispatch: 
   push:
-    tags:
-      - deploy-to-dev-hosting*
+  tags:
+    - deploy-to-dev-hosting*
 #    branches:
 #     - master
 jobs:
